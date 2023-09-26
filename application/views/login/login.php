@@ -19,7 +19,7 @@
             <div class="card-body">
               <h5 class="card-title text-center">Ingreso al Sistema</h5>
               <br>
-              <form method="post" action="<?php echo site_url("login/login"); ?>">
+              <form method="post" action="<?php echo site_url("usuarios/login"); ?>">
                 <div class="form-group">
                   <label for="usuario">Usuario</label>
                   <input type="text" class="form-control" id="usuario" name="usuario" aria-describedby="emailHelp">
@@ -29,7 +29,7 @@
                   <input type="password" class="form-control" id="password" name="password">
                 </div>
                 <div class="form-group">
-                  <p>¿No tenes una cuenta? <a href="<?php echo site_url("login/registro"); ?>">Registrarme</a></p>
+                  <p>¿No tenes una cuenta? <a href="<?php echo site_url("usuarios/registro"); ?>">Registrarme</a></p>
                 </div>
                 <button type="submit" class="btn btn-primary btn-block">Ingresar</button>
               </form>
