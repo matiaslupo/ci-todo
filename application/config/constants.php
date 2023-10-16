@@ -87,3 +87,4 @@ defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest auto
 //PARAMETROS APP
 defined('EST_PENDIENTE')        OR define('EST_PENDIENTE', 0);
 defined('EST_TERMINADO')        OR define('EST_TERMINADO', 1);
+defined('USREST_INACTIVO')        OR define('USREST_INACTIVO', 0);

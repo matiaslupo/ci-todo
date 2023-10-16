@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Login extends CI_Controller {
+class Usuarios extends CI_Controller {
 
     public function __construct(){
         parent::__construct();
@@ -9,10 +9,17 @@ class Login extends CI_Controller {
     }
 
     public function index(){
-        redirect("login/main");
+        redirect("usuarios/main");
     }
 
     public function main(){
+        // $u= $this->usuarios_model->obtener_por_id(1);
+        // echo "<pre>";
+        // print_r($u);
+        // echo "---------------\n";
+        // $this->usuarios_model->actuales["orden"][] = array( "campo" => "nick", "sentido" => "DESC");
+        // $lista= $this->usuarios_model->listar();
+        // print_r($lista);
         $this->load->view("login/login");
     }
 
@@ -30,11 +37,11 @@ class Login extends CI_Controller {
             }
             error_log("Login invalido.");
         }
-        redirect("login/main");
+        //redirect("usuarios/main"); instalar xdebug
     }
 
     public function registro(){
-        $this->load->view("login/registro");
+        $this->load->view("usuarios/registro");
     }
 
     public function nuevo(){
@@ -49,7 +56,7 @@ class Login extends CI_Controller {
                 exit();
             }
         }
-        redirect("login/registro");
+        redirect("usuarios/registro");
     }
 
 }
