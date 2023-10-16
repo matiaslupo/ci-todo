@@ -13,7 +13,7 @@ class pendientes_model extends CI_Model {
     }
 
     public function alta($texto= "", $usuario_id=null){
-		$datos= array("texto" => $texto
+		$datos= array("texto" => $texto,
                         "usuario_id" => $usuario_id);
 		return $this->guardar($datos);
 	}
